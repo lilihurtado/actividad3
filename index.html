@@ -4,9 +4,204 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi primer proyecto</title>
+    <link rel="preload" href="/css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,100&family=Roboto:ital,wght@0,100;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <div class="home-wrapper">
+        <header>
+                <a href="index.html"><img src="/images/Sport & Fitness.png" alt="Logo"></a>
+            <input type="checkbox" id="check">
+            <label for="check"class="mostrar-menu">
+                &#8801
+            </label>
+            <nav class="menu">
+                <a href="a">inicio<i class="fa-solid fa-house"></i></a>
+                <a href="a">Nuestros servicios<i class="fa-solid fa-handshake"></i></a>
+                <a href="a">Compras<i class="fa-solid fa-cart-shopping"></i></i></a>
+                <a href="a">Categorias<i class="fa-solid fa-layer-group"></i></a>
+                <a href="a">contactos</a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>   
+                <label for="check" class="ocultar-menu">
+                    &#215
+                </label>
+                <div class="buscar">
+                    <input type="text" class="buscar-texto">
+                    <a href="" class="boton"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>  
+            </nav>  
+        </header>
+        <section class="container" id="home">
+            <h3>
+               SPORT & FITNNES 
+            </h3>
+            <div class="slider">
+                <ul>
+                    <li><img src="/images/maquinas.jpg" alt=""></li>
+                    <li><img src="/images/comipareja.jpg" alt=""></li>
+                    <li><img src="/images/ropa-deportiva.jpg" alt=""></li>
+                    <li><img src="/images/parejagym.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class=".container" id="sec1">
+           <h1>
+            Nuestros servicios 
+           </h1> 
+
+           <div class="box">
+                <img src="/images/alim.jpg" alt="">
+                <h2>
+                    Asesoria Alimentaria
+                </h2>
+                <p>
+                    Si eres deportista de alto rendimiento o si estás comenzando a practicar un deporte, te realizaremos una evaluación completa en base a tus objetivos marcados por el nivel y tipo de entrenamiento según el deporte que practiques.
+                </p>
+           </div>
+
+           <div class="box">
+                <img src="/images/maqgym.jpg" alt="">
+                <h2>
+                    Venta de articulos de gimnasio
+                </h2>
+                <p>
+                    Somos una organización internacional con más de 10 años de experiencia en la comercialización, instalación, servicio y mantenimiento de  equipos para gimnasio  en Colombia, ofrecemos acesoria y entrenamiento personalizado, tenemos toda clase de articulos, maquinas y gimnacios a tu alcance.
+                </p>
+            </div>
+
+            <div class="box">
+                <img src="/images/ropaycalgym.jpg" alt="">
+                <h2>
+                    Venta de Ropa y calzado deportivo
+                </h2>
+                <p>
+                    Tenemos una gran variedad de ropa y calzado de calidad, con los mejores precios del mercado, ventas por unidad y al por mayor somos fabricantes y distribuidores directos, con envios a todo el pais. Tenemos precencia en las principales ciudades y cobertura a la mayoria de municipios,   
+                </p>
+            </div>
+        </section>
+
+        <section class=".container" id="sec2">
+            <h1>
+             Nuestras categorias 
+            </h1> 
+ 
+            <div class="box">
+                <h2>
+                    Linea hogar
+                </h2>
+                 <img src="/images/pareja.jpeg" alt="">
+                 
+            </div>
+ 
+            <div class="box">
+                <h2>
+                    Linea profesional
+                </h2>
+                 <img src="/images/hombregym (1).jpg" alt="">
+                
+             </div>
+ 
+             <div class="box">
+                <h2>
+                    Linea institucional
+                </h2>
+                 <img src="/images/insti.jpg" alt="">
+             </div>
+             <div class="box">
+                <img src="/images/entrenacasa.jpg" alt="">
+           </div>
+
+           <div class="box">
+                <img src="/images/profe.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="/images/ins.jpg" alt="">
+            </div>
+         </section>
+         <footer>
+         <section class="fondo">
+            <h1>
+                Contacto 
+            </h1>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4 position-relative">
+                  <label for="validationTooltip01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                  <div class="valid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4 position-relative">
+                  <label for="validationTooltip02" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="validationTooltip02" value="" required>
+                  <div class="valid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4 position-relative">
+                  <label for="validationTooltipUsername" class="form-label">Usuario</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                    <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                    <div class="invalid-tooltip">
+                      Por favor elija un nombre de ususario valido.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 position-relative">
+                  <label for="validationTooltip03" class="form-label">Ciudad</label>
+                  <input type="text" class="form-control" id="validationTooltip03" required>
+                  <div class="invalid-tooltip">
+                    Ciudad.
+                  </div>
+                </div>
+                <div class="col-md-3 position-relative">
+                  <label for="validationTooltip04" class="form-label">Departamento</label>
+                  <select class="form-select" id="validationTooltip04" required>
+                    <option selected disabled value="">Cartagena</option>
+                    <option>Medellin</option>
+                    <option>Bogota</option>
+                    <option>Cali</option>
+                    <option>Bucaramanga</option>
+                    <option>Barranquilla</option>
+                    <option>villavicencio</option>
+                    <option>Pasto</option>
+                    <option>Cucuta</option>
+                    <option>Montereia</option>
+                  </select>
+                  <div class="invalid-tooltip">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3 position-relative">
+                  <label for="validationTooltip05" class="form-label">Codigo</label>
+                  <input type="text" class="form-control" id="validationTooltip05" required>
+                  <div class="invalid-tooltip">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+              </form>
+              <p class="pre">
+                Estamos para servirte 
+              </p>
+        </footer> 
+         </section>
+         
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  
 </body>
 </html>
